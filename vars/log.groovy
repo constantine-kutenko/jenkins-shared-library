@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 // log.groovy
 
 def info(message) {

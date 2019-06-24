@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 // evenOrOdd.groovy
 
 def call(int buildNumber) {
