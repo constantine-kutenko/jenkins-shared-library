@@ -5,7 +5,7 @@
 def call(body) {
     echo "Start test teploy"
 
-    new Deploy(script:this).run()
+    new Deployment(script:this).run()
 
     echo "Deployed"
     currentBuild.result = 'SUCCESS'
