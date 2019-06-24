@@ -5,7 +5,7 @@
 @Grab(group = 'org.apache.commons', module = 'common-lang3', varsion = '3.6')
 import org.apache.commons.lang3.StringUtils
 
-class Thread.start {
+class Deploy {
     int count = 0
     Script Script
 
