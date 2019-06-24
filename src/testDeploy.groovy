@@ -2,7 +2,7 @@
 
 // testDeploy.groovy
 
-@Grab(group = 'org.apache.commons', module = 'common-lang3', version = '3.6')
+@Grab(group = 'org.apache.commons', module = 'commons-lang3', version = '3.6')
 import org.apache.commons.lang3.StringUtils
 
 class Deploy {
