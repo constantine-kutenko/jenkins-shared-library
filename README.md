@@ -3,7 +3,7 @@
 A test Jenkins shared library for learning purposes
 
 Load the library into a Declarative Pipeline (Jenkinsfile) from `master` branch and use its methods.
-Declarative Pipeline does not allow method calls on objects outside "script" blocks. (JENKINS-42360 <https://issues.jenkins-ci.org/browse/JENKINS-42360>). The method calls above would need to be put inside a script directive.
+Declarative Pipeline does not allow method calls on objects outside "script" blocks [JENKINS-42360](https://issues.jenkins-ci.org/browse/JENKINS-42360). The method calls above would need to be put inside a script directive.
 
 ```groovy
 @Library('jenkins-shared-library@master') _
@@ -23,8 +23,18 @@ pipeline {
 }
 ```
 
+Load the library into a Scripted Pipeline (Jenkinsfile) from `master` branch and use its methods.
+
 ```groovy
 @Library('jenkins-shared-library@master') _
 
 evenOrOdd(currentBuild.getNumber())
+```
+
+```groovy
+@Library('jenkins-shared-library@master') _
+
+stage('Test deploy') {
+    testDeploy()
+}
 ```
