@@ -3,7 +3,7 @@
 // testDeploy.groovy
 
 def call(body) {
-    echo "Start test teploy"
+    echo "Start test deploy"
 
     new Deployment(script:this).run()
 
